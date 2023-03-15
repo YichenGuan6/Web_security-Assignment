@@ -1,0 +1,44 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Sat Jun 11 20:41:27 CST 2022
+--------------------------------
+
+http://assignment-plutus.unimelb.life:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/test/
+
+Dirs found with a 403 response:
+
+/test/.hta/
+/test/.htpasswd/
+/test/.htaccess/
+/icons/
+
+Dirs found with a 302 response:
+
+/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 200 responce:
+
+/test/sensitive
+/test/.git/HEAD
+
+Files found with a 403 responce:
+
+/test/.hta
+/test/.htaccess
+/test/.htaccess.php
+/test/.hta.php
+/test/.htpasswd
+/test/.htpasswd.php
+
+
+--------------------------------
